@@ -36,7 +36,7 @@ public class ExercicioGPT {
 //		
 		sc.close();
 		
-		
+		// TESTE
 	}
 
 }
