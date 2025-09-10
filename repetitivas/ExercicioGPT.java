@@ -20,20 +20,20 @@ public class ExercicioGPT {
 //		media = soma / contador;
 //		System.out.println("Média: " + media);
 	
-//		int num = 0, par = 0, impar = 0;
-//		num = sc.nextInt();
-//		
-//		while (num != 0) {	
-//			if (num % 2 == 0) {
-//				par += 1;
-//			}else {
-//				impar += 1;
-//			}
-//			num = sc.nextInt();
-//		}
-//		
-//		System.out.printf("Pares = %d Ímpares = %d", par, impar);
-//		
+		int num = 0, par = 0, impar = 0;
+		num = sc.nextInt();
+		
+		while (num != 0) {	
+			if (num % 2 == 0) {
+				par += 1;
+			}else {
+				impar += 1;
+			}
+			num = sc.nextInt();
+		}
+		
+		System.out.printf("Pares = %d Ímpares = %d", par, impar);
+		
 		sc.close();
 		
 	
