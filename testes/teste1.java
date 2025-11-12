@@ -6,36 +6,55 @@ public class teste1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        /*System.out.println("Digite dois números: ");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        /*System.out.print("Digite sua senha: ");
+        int senha = sc.nextInt();
 
-        System.out.println("Digite a operação que deseja realizar soma (+), subtração (-), multiplicação (*) ou divisão (/)");
-        String operation = sc.next();
+        while(senha != 2002){
+            System.out.print("Senha inválida, digite novamente: ");
+            senha = sc.nextInt();
+        }
 
-        switch (operation){
-            case "+":
-                System.out.println(num1 + num2);
-                break;
-            case "-":
-                System.out.println(num1 - num2);
-                break;
-            case "*":
-                System.out.println(num1 * num2);
-                break;
-            case "/":
-                System.out.println(num1 / num2);
-                break;
-            default:
-                System.out.println("Operação inválida!");
+        System.out.println("Acesso permitido!");*/
+
+        /*System.out.println("Digite a coordenada X, Y: ");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        while(x != 0 || y != 0){
+            if (x > 0 & y > 0){
+                System.out.println("Primeiro");
+            }else if(x < 0 & y > 0){
+                System.out.println("Segundo");
+            } else if(x < 0 & y < 0){
+                System.out.println("Terceiro");
+            }else {
+                System.out.println("Quarto");
+            }
+
+            System.out.println("Digite a coordenada X, Y: ");
+            x = sc.nextInt();
+            y = sc.nextInt();
         }*/
 
-        System.out.print("Digite um número: ");
-        int num = sc.nextInt();
+        System.out.println("Digite o combustível desejado: 1.Álcool 2.Gasolina 3.Diesel 4.Fim");
+        int comb = sc.nextInt();
+        int alc = 0;
+        int gas = 0;
+        int diesel = 0;
 
-        for (int i = 1; i <= num ; i++){
-            System.out.println(i);
+        while(comb != 4){
+            if (comb == 1){
+                alc ++;
+            }else if(comb == 2){
+                gas ++;
+            }else if(comb == 3){
+                diesel ++;
+            }
+            comb = sc.nextInt();
         }
+
+        System.out.printf("Muito obrigado!%nAlcool: %d%nGasolina: %d%nDiesel: %d", alc, gas, diesel);
+
 
         sc.close();
     }
