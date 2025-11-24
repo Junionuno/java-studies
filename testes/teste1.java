@@ -51,7 +51,7 @@ public class teste1 {
                 diesel ++;
             }
             comb = sc.nextInt();
-        }
+
 
         System.out.printf("Muito obrigado!%nAlcool: %d%nGasolina: %d%nDiesel: %d", alc, gas, diesel);
 
