@@ -21,7 +21,7 @@ public class desafioGPT {
             sc.nextLine();
             String name = sc.nextLine();
             System.out.print("Telefone: ");
-            int phone = sc.nextInt();
+            String phone = sc.nextLine();
             System.out.print("Bicicleta: ");
             int bikeNumber = sc.nextInt();
 
