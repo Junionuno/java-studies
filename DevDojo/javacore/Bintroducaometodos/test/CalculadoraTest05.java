@@ -9,7 +9,7 @@ public class CalculadoraTest05 {
         int x = 10;
         int y = 16;
 
-        calc.soomaVarArgs(y, x);
+        calc.somaVarArgs(y, x);
 
     }
 }

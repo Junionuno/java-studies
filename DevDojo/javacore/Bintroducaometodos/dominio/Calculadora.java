@@ -34,7 +34,7 @@ public class Calculadora {
         System.out.println(soma);
     }
 
-    public void soomaVarArgs(int... numeros){
+    public void somaVarArgs(int... numeros){
         int soma = 0;
 
         for (int i : numeros){
