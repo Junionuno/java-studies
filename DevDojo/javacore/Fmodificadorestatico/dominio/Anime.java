@@ -1,4 +1,4 @@
-package DevDojo.javacore.Fmodificadorestatico.domain;
+package DevDojo.javacore.Fmodificadorestatico.dominio;
 
 public class Anime {
     private String nome;
