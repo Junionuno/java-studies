@@ -1,4 +1,4 @@
-package DevDojo.javacore.Oexceptions.test;
+package DevDojo.javacore.Oexceptions.error.test;
 
 public class StackOverflowTest01 {
     public static void main(String[] args) {
