@@ -1,11 +1,9 @@
 package Exercícios.chatGPT.test;
 
-import Exercícios.curso.dominio.Local;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+
 
 public class Exercicio41 {
     public static void main(String[] args) {
