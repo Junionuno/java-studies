@@ -2,6 +2,8 @@ package DevDojo.javacore.Rdatas.test;
 
 import Exercícios.curso.dominio.Local;
 
+import java.security.cert.TrustAnchor;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
