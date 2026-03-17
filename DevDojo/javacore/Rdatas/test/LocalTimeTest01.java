@@ -16,5 +16,15 @@ public class LocalTimeTest01 {
         System.out.println(time.get(ChronoField.CLOCK_HOUR_OF_AMPM));
         System.out.println(LocalTime.MAX);
         System.out.println(LocalTime.MIN);
+
+        LocalTime aberturaOficina = LocalTime.of(8, 0);
+        LocalTime agora = LocalTime.now();
+
+        aberturaOficina = aberturaOficina.plusHours(2);
+        if (aberturaOficina.isBefore(agora)){
+            System.out.println("Aberto");
+        }else {
+            System.out.println("Fechado");
+        }
     }
 }

@@ -22,5 +22,17 @@ public class LocalDateTest01 {
         System.out.println(date);
         System.out.println(agora);
 
+
+        LocalDate now = LocalDate.now();
+        LocalDate vencimento = LocalDate.of(2026, Month.APRIL, 20);
+
+        System.out.println(now);
+        System.out.println(vencimento.getDayOfWeek());
+        if (now.isBefore(vencimento)){
+            System.out.println("Válido");
+        }else {
+            System.out.println("Expirado");
+        }
+
     }
 }

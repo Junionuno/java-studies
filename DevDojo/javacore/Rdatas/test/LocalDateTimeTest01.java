@@ -18,5 +18,10 @@ public class LocalDateTimeTest01 {
         System.out.println(ldt1);
         System.out.println(ldt2);
         System.out.println(ldt1.getDayOfMonth());
+
+        LocalDateTime treinoHulk = LocalDateTime.of(2026, 3, 20, 21, 0, 0);
+        treinoHulk = treinoHulk.minusDays(1);
+
+        System.out.println( treinoHulk + " Lembrete ");
     }
 }

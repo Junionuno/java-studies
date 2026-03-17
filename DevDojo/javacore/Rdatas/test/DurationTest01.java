@@ -6,7 +6,7 @@ import java.time.*;
 import java.time.temporal.ChronoUnit;
 
 public class DurationTest01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime nowAfterTwoYears = LocalDateTime.now().plusYears(2).plusMinutes(8);
         LocalTime timeNow = LocalTime.now();
@@ -24,6 +24,17 @@ public class DurationTest01 {
         System.out.println(d4);
         System.out.println(d5);
         System.out.println(d6);
+
+        Instant inicio = Instant.now();
+        System.out.println(inicio);
+
+        Thread.sleep(2000);
+
+        Instant fim = Instant.now();
+        System.out.println(fim);
+
+        Duration d7 = Duration.between(inicio, fim);
+        System.out.println(d7.toMillis());
 
     }
 }

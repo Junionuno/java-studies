@@ -17,7 +17,6 @@ public class DateTimeFormatterTest01 {
         LocalDate parse1 = LocalDate.parse("20210219", DateTimeFormatter.BASIC_ISO_DATE);
         LocalDate parse2 = LocalDate.parse("2021-02-19+05:00", DateTimeFormatter.ISO_DATE);
         LocalDate parse3 = LocalDate.parse("2021-02-19", DateTimeFormatter.ISO_LOCAL_DATE);
-
         System.out.println(parse1);
         System.out.println(parse2);
         System.out.println(parse3);
@@ -40,14 +39,17 @@ public class DateTimeFormatterTest01 {
         LocalDate parseGr = LocalDate.parse("04.März.2026", formatterGR);
         System.out.println(parseGr);
 
+        DateTimeFormatter formatterBr = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+        System.out.println(now.format(formatterBr));
 
-        DateTimeFormatter dataBr = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy").withLocale(new Locale("en", "US"));
-        String agora = LocalDateTime.now().format(dataBr);
-        System.out.println(agora);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, dd 'de' MMMM");
+        System.out.println(now.format(formatter));
 
-        DateTimeFormatter data = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-        LocalDateTime parseData = LocalDateTime.parse("25/12/2026 20:30", data);
-        System.out.println(parseData);
+        String aniversarioGalo = "25/03/1908";
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate aniversario = LocalDate.parse(aniversarioGalo, formatter1);
+        aniversario = aniversario.plusYears(118);
+        System.out.println(aniversario);
 
 
     }

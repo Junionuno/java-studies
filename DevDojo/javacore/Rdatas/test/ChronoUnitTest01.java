@@ -17,5 +17,12 @@ public class ChronoUnitTest01 {
         System.out.println(ChronoUnit.WEEKS.between(aniversario, now));
         System.out.println(ChronoUnit.MONTHS.between(aniversario, now));
         System.out.println(ChronoUnit.YEARS.between(aniversario, now));
+
+        LocalDate estreia = LocalDate.of(2021, 3, 7);
+        LocalDate hoje = LocalDate.now();
+
+        System.out.println(ChronoUnit.YEARS.between(estreia, hoje) + " Anos com a camisa do galo!");
+        System.out.println(ChronoUnit.MONTHS.between(estreia, hoje) + " Meses com a camisa do galo!");
+        System.out.println(ChronoUnit.WEEKS.between(estreia, hoje) + " Semanas com a camisa do galo!");
     }
 }
