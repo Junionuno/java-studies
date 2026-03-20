@@ -2,7 +2,7 @@
 caso contrário devera multiplicar A por B. Ao final de qualquer um dos cálculos deve-se atribuir o resultado a uma variável C e
 imprimir seu valor na tela.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio3 {
     public static void main(String[] args) {

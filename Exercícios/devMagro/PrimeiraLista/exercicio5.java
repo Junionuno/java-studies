@@ -3,7 +3,7 @@
 usuário ganha e imprima na tela o resultado. (Base para o Salário mínimo R$ 1.293,20).
 */
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio5 {
     public static void main(String[] args) {

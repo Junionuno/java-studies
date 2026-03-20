@@ -2,7 +2,7 @@
 2 - Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
 */
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio2 {
     public static void main(String[] args) {

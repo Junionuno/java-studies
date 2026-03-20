@@ -2,7 +2,7 @@
 7 - Faça um algoritmo que leia dois valores booleanos (lógicos) e determine se ambos são VERDADEIRO ou FALSO.
 */
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio7 {
     public static void main(String[] args) {

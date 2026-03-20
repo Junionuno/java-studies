@@ -1,6 +1,6 @@
 /*10 - Faça um algoritmo que leia três notas obtidas por um aluno, e imprima na tela a média das notas.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio10 {
     public static void main(String[] args) {

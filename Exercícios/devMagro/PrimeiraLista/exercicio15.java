@@ -1,7 +1,7 @@
 /*15 - Faça um algoritmo que leia três valores que representam os três lados de um triângulo e verifique se são válidos, determine se o triângulo é
 equilátero, isósceles ou escaleno.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio15 {
     public static void main(String[] args) {

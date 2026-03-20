@@ -1,6 +1,6 @@
 /*19 - Faça um algoritmo que mostre um valor aleatório entre 0 e 100.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 import java.util.Random;
 

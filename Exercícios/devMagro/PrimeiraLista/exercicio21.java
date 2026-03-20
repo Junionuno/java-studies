@@ -2,7 +2,7 @@
 Fórmula: distância = tempo x velocidade.
         litros usados = distância / 12.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 import java.util.Scanner;
 

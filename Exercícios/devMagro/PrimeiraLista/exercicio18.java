@@ -1,6 +1,6 @@
 /*18 - Faça um algoritmo que receba um valor inteiro e imprima na tela a sua tabuada.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio18 {
     public static void main(String[] args) {

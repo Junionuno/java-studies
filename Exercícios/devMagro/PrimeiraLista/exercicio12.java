@@ -8,7 +8,7 @@ Tabela de Código de Condições de Pagamento
  3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros
  4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10%*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 import Exercícios.devMagro.dominio.Pagamento;
 import Exercícios.devMagro.dominio.TipoPagamento;

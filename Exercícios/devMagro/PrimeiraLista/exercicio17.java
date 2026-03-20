@@ -1,6 +1,6 @@
 /*17 - Faça um algoritmo que imprima na tela a tabuada de 1 até 10.*/
 
-package Exercícios.devMagro;
+package Exercícios.devMagro.PrimeiraLista;
 
 public class exercicio17 {
     public static void main(String[] args) {
