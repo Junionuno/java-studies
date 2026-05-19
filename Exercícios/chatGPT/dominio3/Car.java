@@ -1,5 +1,7 @@
 package Exercícios.chatGPT.dominio3;
 
+import java.util.Objects;
+
 public class Car {
     private String model;
     private String engine;
@@ -15,6 +17,11 @@ public class Car {
         if (this == obj) return true;
         Car car = (Car) obj;
         return model != null && model.equals(car.getModel()) && engine != null &&engine.equals(car.getEngine());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, engine);
     }
 
     public String getModel() {
