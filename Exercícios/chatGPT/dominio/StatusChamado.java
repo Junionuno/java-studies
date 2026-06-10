@@ -1,8 +1,0 @@
-package Exercícios.chatGPT.dominio;
-
-public enum StatusChamado {
-    ABERTO,
-    EM_ANDAMENTO,
-    RESOLVIDO,
-    CANCELADO
-}
