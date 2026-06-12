@@ -1,15 +1,17 @@
 package Exercícios.IA.dominio4;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparable<Car>{
     private String model;
     private String pilot;
-    private int position;
+    private int points;
 
-    public Car(String model, String pilot) {
+    public Car(String model, String pilot, int points) {
         this.model = model;
         this.pilot = pilot;
+        this.points = points;
     }
 
     @Override
@@ -17,8 +19,15 @@ public class Car {
         return "Car{" +
                 "model='" + model + '\'' +
                 ", pilot='" + pilot + '\'' +
-                ", position=" + position +
-                '}';
+                ", points = " + points;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 
     @Override
@@ -49,11 +58,8 @@ public class Car {
         this.pilot = pilot;
     }
 
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
+    @Override
+    public int compareTo(Car outroCar) {
+        return Integer.compare(outroCar.getPoints(), this.points);
     }
 }
