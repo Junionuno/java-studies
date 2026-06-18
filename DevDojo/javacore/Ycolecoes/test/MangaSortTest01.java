@@ -14,6 +14,18 @@ class MangaByIdComparator implements Comparator<Manga>{
     }
 }
 
+class MangaByPriceComparator implements Comparator<Manga>{
+    @Override
+    public int compare(Manga manga1, Manga manga2) {
+        if (manga1.getPreco() < manga2.getPreco()) {
+            return -1;
+        }else if (manga1.getPreco() == manga2.getPreco()){
+            return 0;
+        }
+        return 1;
+    }
+}
+
 public class MangaSortTest01 {
     public static void main(String[] args) {
         List<Manga> mangas = new ArrayList<>();
@@ -42,5 +54,13 @@ public class MangaSortTest01 {
         for(Manga manga : mangas){
             System.out.println(manga);
         }
+
+        System.out.println("-------------------------------");
+
+        mangas.sort(new MangaByPriceComparator());
+        for (Manga manga : mangas) {
+            System.out.println(manga);
+        }
+
     }
 }
